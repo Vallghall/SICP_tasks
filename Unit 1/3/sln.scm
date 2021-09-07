@@ -6,7 +6,7 @@
         ((>= b a) (if (>= c a)
                   (+ (* b b) (* c c))
                   (+ (* b b) (* a a))))
-        ((c >= b) (if (>= a b)
+        ((>= c b) (if (>= a b)
                   (+ (* c c) (* a a))
                   (+ (* c c) (* b b))))))
 (sumOfbiggestSquares 1 2 3)
