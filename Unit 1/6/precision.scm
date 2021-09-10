@@ -11,7 +11,7 @@
 (define (average a b)
   (/ (+ a b) 2))
 (define (good-enough? guess x)
-  (<= (abs (- x (square guess)))
+  (> 0.001
       (abs (- guess
               (improve guess x)))))
 (define (square x) (* x x))
