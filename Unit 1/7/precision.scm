@@ -11,7 +11,8 @@
 (define (average a b)
   (/ (+ a b) 2))
 (define (good-enough? guess x)
-  (> 0.001
+  (> (* precision guess)
       (abs (- guess
               (improve guess x)))))
 (define (square x) (* x x))
+(define precision 0.00001)
